@@ -123,7 +123,6 @@ These are **initial prototype values**. MQ sensors need warm-up and calibration,
 smart-ventilation-system/
 ├── README.md
 ├── LICENSE
-├── .gitignore
 ├── code/
 │   └── Smart_Ventilation_System.ino
 ├── circuit/
@@ -132,15 +131,6 @@ smart-ventilation-system/
 │   └── pin_connections.md
 ├── hardware/
 │   ├── components_list.md
-│   └── component_photos/
-├── dashboard/
-│   └── dashboard_screenshot.png
-├── images/
-│   ├── prototype_front.jpg
-│   ├── prototype_internal.jpg
-│   └── oled_display.jpg
-└── docs/
-    └── project_report.pdf
 ```
 
 ## Limitations and future work

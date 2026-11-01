@@ -168,4 +168,4 @@ This is an educational prototype. It is not a certified ventilation controller, 
 | **Department** | Electronics and Computer Science (ECS) |
 | **Academic year** | 2026–2027 |
 | **Project guide** | Prof. Javed Patel |
-| **Project members** | Anurag Rathod |
+| **Project members** | Anurag Rathod, Anand, Aditya |

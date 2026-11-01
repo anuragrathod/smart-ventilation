@@ -129,7 +129,7 @@ smart-ventilation-system/
 │   ├── block_diagram.png
 │   ├── circuit_diagram.png
 │   └── pin_connections.md
-├── hardware/
+└── hardware/
     └── components_list.md
 ```
 

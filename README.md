@@ -59,27 +59,6 @@ Confirm the exact MQ sensor model and the ratings printed on the fan and adapter
 
 ![Smart Ventilation System block diagram](circuit/block_diagram.png)
 
-## Pin connections
-
-| ESP32 pin / rail | Connected component | Signal |
-|---|---|---|
-| GPIO4 (D4) | DHT22 `OUT` | Temperature/humidity data |
-| GPIO21 (D21) | OLED `SDA` | I²C data |
-| GPIO22 (D22) | OLED `SCK` / `SCL` | I²C clock |
-| GPIO34 (D34) | MQ `AO` through voltage divider | Analog gas-sensor reading |
-| GPIO5 (D5) | KN2222A base through 10 kΩ resistor | Relay driver control |
-| 3V3 | DHT22 `+`, OLED `VCC` | 3.3 V supply |
-| GND | Sensor/display grounds and transistor emitter | Common ground |
-
-**Additional connections**
-
-- **MQ module:** `VCC` to a regulated 5 V rail, `GND` to common ground, `AO` to GPIO34 through a voltage divider. The digital output (`DO`) is not used.
-- **Relay module:** `VCC` and `GND` to a suitable 5 V supply and common ground; `IN` to the KN2222A collector.
-- **KN2222A:** base to GPIO5 through 10 kΩ, emitter to common ground, collector to relay `IN`. Verify the base/collector/emitter pinout from the datasheet before wiring.
-- **Fan switching:** 12 V adapter positive to relay `COM`; relay `NO` to fan positive; fan negative to adapter negative. Leave `NC` unused so the fan is off by default.
-
-> **MQ analog-input protection:** Use a voltage divider between MQ `AO` and GPIO34. The ESP32 GPIO is not 5 V tolerant. Check the voltage at GPIO34 with a multimeter and keep it within the ESP32 input limit.
-
 Detailed wiring tables and a pre-power checklist are in [`circuit/pin_connections.md`](circuit/pin_connections.md).
 
 ## Power arrangement
@@ -188,5 +167,5 @@ This is an educational prototype. It is not a certified ventilation controller, 
 | **Institute** | Vidyalankar Institute of Technology |
 | **Department** | Electronics and Computer Science (ECS) |
 | **Academic year** | 2026–2027 |
-| **Project guide** | Javed Patel |
-| **Project members** | Anurag Rathod, Anand, Aditya |
+| **Project guide** | Prof. Javed Patel |
+| **Project members** | Anurag Rathod |

@@ -130,7 +130,7 @@ smart-ventilation-system/
 │   ├── circuit_diagram.png
 │   └── pin_connections.md
 ├── hardware/
-│   ├── components_list.md
+    └── components_list.md
 ```
 
 ## Limitations and future work
